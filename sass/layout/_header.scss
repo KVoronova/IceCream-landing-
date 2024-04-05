@@ -1,0 +1,133 @@
+@use "../base/variables" as *;
+
+.header-menu-box {
+    background-color: $color-main;
+}
+
+.header-menu {
+    display: flex;
+    gap: 70px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.menu-li {
+    list-style: none;
+    color: $color-pink;
+    line-height: 25px;
+    cursor: pointer;
+    padding: 10px;
+
+    &:hover {
+        text-shadow: 0 0 1px $color-pink;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $color-pink;
+    }
+}
+
+
+.header-container {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background-color: $color-main;
+    justify-items: center;
+    padding: 20px 30px 70px 30px; 
+}
+
+.block-image {
+
+    &_first{
+        background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.327), rgba(206, 91, 132, 0.73)),
+        url('/img/ice-one.jpg');
+        background-size: cover;
+        height: 550px;
+        width: 295px;
+        z-index: 5;
+       
+
+    }
+
+    &_second {
+        height: 550px;
+        width: 295px;
+        z-index: 5;
+        background-image: url('/img/ice-two.jpg');
+        background-size: cover;
+       
+    }
+
+    &_third {
+        height: 550px;
+        width: 295px;
+        background-image: url('/img/ice-trd.jpg');
+        background-size: cover;
+    }
+}
+
+.heading-container {
+   align-self: center;
+}
+
+.main-header {
+  font-family: "DM Mono"; 
+  font-weight: 300;
+  font-size: 70px;
+  text-transform: uppercase;
+  color: $color-pink;
+
+  z-index: 1;
+  animation-name: moveInLeft;
+  animation-duration: 3s;
+
+}
+
+.secondary-header {
+    font-family: "DM Mono";
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 45px;
+    color: $color-blue;
+    text-align: right;
+    z-index: 1;
+    animation-name: moveInRight;
+    animation-duration: 3s;
+}
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+
+    80% {
+        transform: translateX(1rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(10rem);
+    }
+
+    80% {
+        transform: translateX(-1rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(1);
+    }
+
+}

@@ -1,0 +1,54 @@
+@use "../base/variables" as *;
+
+.shop-container {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    background-color: $color-main;   
+    justify-items: center; 
+}
+
+.card-block {
+    align-self: center;
+
+    &__first{
+        margin-left: 40px;
+    }
+
+    &__second {
+        margin-left: 40px;
+    }
+
+    &__third{
+        margin-right: 40px;
+    }
+}
+
+.card-img {
+width: 295px;
+height: 350px;
+}
+
+.heading-shop {
+    font-size: 22px;
+    font-weight: 400;
+    font-family: "DM Mono";
+    color: $color-pink;
+    text-align: center;
+}
+
+.text-card{
+    font-size: $default-font-size;
+    font-weight: 400;
+    color: $color-blue;
+    text-align: center;
+}
+
+.price-card {
+    font-size: 15px;
+    font-weight: 500;
+    font-family: "DM Mono";
+    color: $color-pink;
+    text-align: center;
+}

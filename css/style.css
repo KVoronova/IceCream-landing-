@@ -1,0 +1,273 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-weight: 400;
+  font-family: Open Sans, sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0.5rem;
+}
+
+.header-menu-box {
+  background-color: #F5F0EA;
+}
+
+.header-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 70px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu-li {
+  list-style: none;
+  color: #CE5B84;
+  line-height: 25px;
+  cursor: pointer;
+  padding: 10px;
+}
+.menu-li:hover {
+  text-shadow: 0 0 1px #CE5B84;
+}
+.menu-li__link {
+  text-decoration: none;
+  color: #CE5B84;
+}
+
+.header-container {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background-color: #F5F0EA;
+  justify-items: center;
+  padding: 20px 30px 70px 30px;
+}
+
+.block-image_first {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(245, 246, 252, 0.327)), to(rgba(206, 91, 132, 0.73))), url("/img/ice-one.jpg");
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.327), rgba(206, 91, 132, 0.73)), url("/img/ice-one.jpg");
+  background-size: cover;
+  height: 550px;
+  width: 295px;
+  z-index: 5;
+}
+.block-image_second {
+  height: 550px;
+  width: 295px;
+  z-index: 5;
+  background-image: url("/img/ice-two.jpg");
+  background-size: cover;
+}
+.block-image_third {
+  height: 550px;
+  width: 295px;
+  background-image: url("/img/ice-trd.jpg");
+  background-size: cover;
+}
+
+.heading-container {
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.main-header {
+  font-family: "DM Mono";
+  font-weight: 300;
+  font-size: 70px;
+  text-transform: uppercase;
+  color: #CE5B84;
+  z-index: 1;
+  -webkit-animation-name: moveInLeft;
+          animation-name: moveInLeft;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+.secondary-header {
+  font-family: "DM Mono";
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 45px;
+  color: #5BA5CE;
+  text-align: right;
+  z-index: 1;
+  -webkit-animation-name: moveInRight;
+          animation-name: moveInRight;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+@-webkit-keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-10rem);
+            transform: translateX(-10rem);
+  }
+  80% {
+    -webkit-transform: translateX(1rem);
+            transform: translateX(1rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-10rem);
+            transform: translateX(-10rem);
+  }
+  80% {
+    -webkit-transform: translateX(1rem);
+            transform: translateX(1rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+@-webkit-keyframes moveInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(10rem);
+            transform: translateX(10rem);
+  }
+  80% {
+    -webkit-transform: translateX(-1rem);
+            transform: translateX(-1rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(1);
+            transform: translate(1);
+  }
+}
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(10rem);
+            transform: translateX(10rem);
+  }
+  80% {
+    -webkit-transform: translateX(-1rem);
+            transform: translateX(-1rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(1);
+            transform: translate(1);
+  }
+}
+.offer-container {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 2fr;
+  gap: 1px;
+  background-color: #FFFCF8;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.offer-container__heading {
+  text-align: end;
+}
+.offer-container__text {
+  margin: 10px 90px 10px 90px;
+}
+
+.heading-secondary {
+  text-transform: uppercase;
+  font-family: "DM Mono";
+  font-size: 40px;
+  font-weight: 300;
+  color: #CE5B84;
+}
+
+.offer-text {
+  font-size: 16px;
+  font-weight: 400;
+  color: #5BA5CE;
+  -webkit-column-count: 2;
+     -moz-column-count: 2;
+          column-count: 2;
+  -webkit-column-gap: 40px;
+     -moz-column-gap: 40px;
+          column-gap: 40px;
+}
+.offer-text__link {
+  color: #5BA5CE;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.shop-container {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  background-color: #F5F0EA;
+  justify-items: center;
+}
+
+.card-block {
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+.card-block__first {
+  margin-left: 40px;
+}
+.card-block__second {
+  margin-left: 40px;
+}
+.card-block__third {
+  margin-right: 40px;
+}
+
+.card-img {
+  width: 295px;
+  height: 350px;
+}
+
+.heading-shop {
+  font-size: 22px;
+  font-weight: 400;
+  font-family: "DM Mono";
+  color: #CE5B84;
+  text-align: center;
+}
+
+.text-card {
+  font-size: 16px;
+  font-weight: 400;
+  color: #5BA5CE;
+  text-align: center;
+}
+
+.price-card {
+  font-size: 15px;
+  font-weight: 500;
+  font-family: "DM Mono";
+  color: #CE5B84;
+  text-align: center;
+}
