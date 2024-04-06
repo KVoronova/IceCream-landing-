@@ -16,7 +16,6 @@ body {
   font-family: Open Sans, sans-serif;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 0.5rem;
 }
 
 .header-menu-box {
@@ -55,10 +54,10 @@ body {
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: repeat(4, 1fr);
-  gap: 1px;
+  gap: 50px;
   background-color: #F5F0EA;
   justify-items: center;
-  padding: 20px 30px 70px 30px;
+  padding: 20px 85px 70px 85px;
 }
 
 .block-image_first {
@@ -225,9 +224,10 @@ body {
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: repeat(4, 1fr);
-  gap: 40px;
+  gap: 50px;
   background-color: #F5F0EA;
   justify-items: center;
+  padding: 99px 85px 99px 85px;
 }
 
 .card-block {
@@ -235,13 +235,18 @@ body {
       align-self: center;
 }
 .card-block__first {
-  margin-left: 40px;
+  background-size: cover;
 }
 .card-block__second {
-  margin-left: 40px;
+  background-size: cover;
 }
 .card-block__third {
-  margin-right: 40px;
+  background-size: cover;
+}
+.card-block__btn {
+  -ms-flex-item-align: center;
+      align-self: center;
+  justify-self: center;
 }
 
 .card-img {
@@ -255,6 +260,9 @@ body {
   font-family: "DM Mono";
   color: #CE5B84;
   text-align: center;
+  text-transform: uppercase;
+  margin-top: 20px;
+  cursor: pointer;
 }
 
 .text-card {
@@ -262,6 +270,7 @@ body {
   font-weight: 400;
   color: #5BA5CE;
   text-align: center;
+  margin-top: 10px;
 }
 
 .price-card {
@@ -270,4 +279,91 @@ body {
   font-family: "DM Mono";
   color: #CE5B84;
   text-align: center;
+  margin-top: 10px;
+}
+
+.heading-secondary-shop {
+  text-transform: uppercase;
+  font-family: "DM Mono";
+  font-size: 40px;
+  font-weight: 300;
+  color: #CE5B84;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.btn-shop {
+  border: none;
+  width: 150px;
+  height: 40px;
+  background-color: #CE5B84;
+  border-radius: 6.25px;
+  color: #F5F0EA;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-family: "DM Mono";
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.btn-shop:hover {
+  opacity: 0.6;
+}
+.btn-shop:active {
+  background-color: #5BA5CE;
+  opacity: 1;
+}
+
+.laboratory-box {
+  background-color: #FFFCF8;
+  padding: 100px 380px 100px 380px;
+}
+
+.laboratory-text {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  color: #5BA5CE;
+}
+
+.heading-secondary-lab {
+  text-transform: uppercase;
+  font-family: "DM Mono";
+  font-size: 40px;
+  font-weight: 300;
+  color: #CE5B84;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.cafe-box {
+  display: grid;
+  grid-template-rows: 3fr;
+  grid-template-columns: 1fr 1fr 2fr;
+  gap: 30px;
+  padding: 100px 85px 100px 85px;
+}
+
+.adress-box {
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.cafe-text {
+  color: #5BA5CE;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: end;
+}
+
+.heading-secondary-cafe {
+  text-transform: uppercase;
+  font-family: "DM Mono";
+  font-size: 40px;
+  font-weight: 300;
+  color: #CE5B84;
+  text-align: start;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin-left: 30px;
 }

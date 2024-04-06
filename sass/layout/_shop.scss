@@ -4,24 +4,29 @@
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: repeat(4, 1fr);
-    gap: 40px;
+    gap: 50px;
     background-color: $color-main;   
     justify-items: center; 
+    padding: 99px 85px 99px 85px;
+    
 }
 
 .card-block {
     align-self: center;
-
+   
     &__first{
-        margin-left: 40px;
+     background-size: cover;
     }
-
     &__second {
-        margin-left: 40px;
+        background-size: cover;
+    }
+    &__third{
+        background-size: cover;
     }
 
-    &__third{
-        margin-right: 40px;
+    &__btn {
+        align-self: center;
+        justify-self: center;
     }
 }
 
@@ -36,6 +41,9 @@ height: 350px;
     font-family: "DM Mono";
     color: $color-pink;
     text-align: center;
+    text-transform: uppercase;
+    margin-top: 20px;
+    cursor: pointer;
 }
 
 .text-card{
@@ -43,6 +51,7 @@ height: 350px;
     font-weight: 400;
     color: $color-blue;
     text-align: center;
+    margin-top: 10px;
 }
 
 .price-card {
@@ -51,4 +60,42 @@ height: 350px;
     font-family: "DM Mono";
     color: $color-pink;
     text-align: center;
+    margin-top: 10px;
 }
+
+.heading-secondary-shop {
+    text-transform: uppercase;
+    font-family: "DM Mono";
+    font-size: 40px;
+    font-weight: 300;
+    color: $color-pink;
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+
+.btn-shop {
+    border: none;
+    width: 150px;
+    height: 40px;
+    background-color: $color-pink;
+    border-radius: 6.25px;
+    color: $color-main;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: "DM Mono";
+    cursor: pointer;
+    transition: all 0.3s;
+
+ &:hover {
+    opacity: .6; 
+ }
+ 
+ &:active {
+    background-color: $color-blue;
+    opacity: 1;
+}  
+  }
+  
+
+ 

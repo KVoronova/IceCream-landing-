@@ -34,10 +34,10 @@
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: repeat(4, 1fr);
-    gap: 1px;
+    gap: 50px;
     background-color: $color-main;
     justify-items: center;
-    padding: 20px 30px 70px 30px; 
+    padding: 20px 85px 70px 85px; 
 }
 
 .block-image {
