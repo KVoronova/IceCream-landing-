@@ -1,4 +1,5 @@
 @use "../base/variables" as *;
+@use "../base/typografy" as *;
 
 .laboratory-box {
     background-color: $color-main-light;
@@ -12,13 +13,4 @@
     color: $color-blue;
 }
 
-.heading-secondary-lab {
-    text-transform: uppercase;
-    font-family: "DM Mono";
-    font-size: 40px;
-    font-weight: 300;
-    color: $color-pink;
-    text-align: center;
-    margin-top: 30px;
-    
-}
+
