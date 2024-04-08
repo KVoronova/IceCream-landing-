@@ -43,13 +43,16 @@
 .block-image {
 
     &_first{
-        background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.327), rgba(206, 91, 132, 0.73)),
-        url('/img/ice-one.jpg');
+        background-image: url(/img/slice-one.svg);
         background-size: cover;
         height: 550px;
         width: 295px;
         z-index: 5;
        
+        /*
+             background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.327), rgba(206, 91, 132, 0.73)),
+       url('/img/ice-one.jpg');
+        */
 
     }
 
@@ -57,7 +60,8 @@
         height: 550px;
         width: 295px;
         z-index: 5;
-        background-image: url('/img/ice-two.jpg');
+       // background-image: url('/img/ice-two.jpg');
+       background-image: url(/img/Slice-2.svg);
         background-size: cover;
        
     }
@@ -65,7 +69,8 @@
     &_third {
         height: 550px;
         width: 295px;
-        background-image: url('/img/ice-trd.jpg');
+      //  background-image: url('/img/ice-trd.jpg');
+      background-image: url(/img/Slice-3.svg);
         background-size: cover;
     }
 }
