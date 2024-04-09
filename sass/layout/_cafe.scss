@@ -17,13 +17,64 @@
 
 .cafe-text {
     color: $color-blue;
-    font-size: 16px;
+    font-size: $default-font-size;
     font-weight: 400;
     text-align: end;
 }
 
+.cafe-img {
+    width: 100%;
+}
 
 .link-cafe {
     color: $color-blue-light;
     cursor: pointer;
+}
+
+.cafe-container {
+    container-type: inline-size;
+    container-name: cafe-container;
+}
+
+@container cafe-container (1024px <= width <= 1400px) {
+    .cafe-box {
+        padding: 70px 45px 70px 45px;   
+        gap: 20px;
+    }
+
+    .cafe-text {
+        font-size: 13px;
+    }
+
+    .heading-secondary__cafe {
+        font-size: 32px;
+    }
+}
+
+@container cafe-container (640px <= width <= 1023px) {
+    .cafe-box {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 2fr 0.5fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 30px;
+        padding: 10px 45px 10px 45px;
+    }
+
+    .heading-secondary__cafe {
+        font-size: 32px;
+        grid-area: 1 / 1 / 2 / 2;
+        text-align: center;
+        margin-left: 0px;
+    }
+
+    .cafe-text {
+        font-size: 13px;
+        text-align: center; 
+        grid-area: 3 / 1 / 4 / 2;
+    }
+
+    .cafe-img {
+        grid-area: 2 / 1 / 3 / 2;
+    }
 }

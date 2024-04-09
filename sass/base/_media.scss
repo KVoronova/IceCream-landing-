@@ -6,11 +6,11 @@
 @media (360px < width < 600px) {}
 
 //CONTAINER
-.main-container {
+.main-container  {
     container-type: inline-size;
 }
 
-@container (width > 45ch) {
+@container (width > 45ch)/(width >= 600px) / (360 <= width <=600)  {
     .header-menu {
    gap:50px;
     }

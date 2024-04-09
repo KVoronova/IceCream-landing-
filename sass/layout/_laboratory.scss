@@ -13,4 +13,32 @@
     color: $color-blue;
 }
 
+.continer-lab {
+    container-type: inline-size;
+    container-name: laboratory;
+}
 
+@container laboratory (1024px <= width <= 1400px) {
+    .laboratory-box {
+        padding: 100px 280px 100px 280px;
+    }
+
+    .laboratory-text {
+        font-size: 16px;
+    }
+}
+
+
+@container laboratory (640px <= width <= 1023px) {
+    .laboratory-box {
+        padding: 50px 60px 50px 60px;
+    }
+
+    .laboratory-text {
+        font-size: 13px;
+    }
+
+    .heading-secondary__lab {
+        font-size: 32px;
+    }
+}

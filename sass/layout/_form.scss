@@ -14,14 +14,14 @@
 .text-form {
    text-align: end;
    color: $color-blue;
-   font-size: 16px;
+   font-size: $default-font-size;
    font-weight: 400;
    padding-left: 30px;
 }
 
 .text-form-name {
     color: $color-pink;
-    font-size: 16px;
+    font-size: $default-font-size;
     font-weight: 400;
     margin-bottom: 20px;
 }
@@ -41,7 +41,6 @@
 .form {
 
     &__group {
-      //  align-self: center;
       margin-top: 20px;
     }
 
@@ -87,4 +86,103 @@
         background-color: $color-blue;
         opacity: 1;
     } 
+}
+
+.form-container {
+    container-type: inline-size;
+    container-name: form-container;
+}
+
+@container form-container (1024px <= width <= 1400px) {
+    .form-box {
+        gap: 30px;
+        padding: 60px 45px 60px 45px;
+    }
+
+    .heading-secondary {
+        font-size: 32px;
+    }
+
+    .text-form {
+        font-size: 13px;
+    }
+
+    .text-form-name {
+        font-size: 13px;
+    }
+
+    .text-form-consent {
+        font-size: 10px;
+    }
+
+    .form__input {
+    width: 230px;
+    }
+
+    .btn-form {
+        width: 230px;
+        font-size: 12px;
+    }
+}
+
+@container form-container (640px <= width <= 1023px) {
+    .form-box {
+        display: grid;
+        grid-template-columns: repeat(2, 0.5fr);
+        grid-template-rows: repeat(2, 0.5fr);
+        grid-column-gap: 30px;
+        grid-row-gap: 0px;
+        padding: 40px 45px 40px 45px;
+
+    }
+
+    .heading-secondary__form {
+        font-size: 32px;
+      //  padding-left: 90px;
+        grid-area: 1 / 1 / 2 / 2;
+        align-self: flex-start;
+    }
+
+    .text-form {
+        font-size: 13px;
+        grid-area: 2 / 1 / 4 / 2;
+        align-self: center;
+        padding-left: 0px;
+    }
+
+    .form__input {
+        width: 100%;
+        }
+
+
+    .text-form-name {
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+ 
+    .text-form-consent {
+        font-size: 10px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+
+    .form__group {
+     margin-top: 0px;
+    }
+
+    .form__group-1 {
+        grid-area: 1 / 2 / 2 / 3;
+    }
+    .form__group-2 {
+        grid-area: 2 / 2 / 3 / 3; 
+    }
+
+
+    .btn-form {
+        grid-area: 3 / 2 / 4 / 3;
+        margin-top: 20px;   
+        width: 100%;
+
+    }
+
 }

@@ -6,7 +6,6 @@
     display: flex;
     padding: 47px 85px 47px 85px;
    justify-content: space-between;
-
 }
 
 .footer-menu {
@@ -28,7 +27,6 @@
     justify-content: flex-start;
     align-items: center;
     margin-right: 90px;
-   
 }
 
 .footer-icon {
@@ -43,7 +41,65 @@ align-self: center;
     text-align: center;
     font-size: 13px;
     color: $color-blue-light;
-   margin-top: -50px;
+    margin-top: -50px;
 
 }
 
+.footer-cont {
+    container-type: inline-size;
+    container-name: footer-container;
+}
+
+@container footer-container (1024px <= width <= 1400px) {
+    .footer-container {
+        padding: 27px 45px 47px 45px;
+    }
+
+    .footer-menu {
+        gap: 10px; 
+        font-size: 13px;
+    
+        &__ul{
+             gap: 30px;
+        }
+    }
+    
+    .icon-social {
+        margin-left: 10px;
+    }
+
+    .copyright {
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+@container footer-container (640px <= width <= 1023px) {
+    .footer-container {
+        padding: 17px 45px 37px 45px;
+    }
+
+    .footer-menu {
+        gap: 10px; 
+        font-size: 10px;
+    
+        &__ul{
+             gap: 1px;
+        }
+    }
+    
+    .icon-social {
+        margin-left: 10px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .copyright {
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+
+    .logo-footer {
+        margin-right: 40px;
+    }
+}
