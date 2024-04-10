@@ -78,3 +78,30 @@
         grid-area: 2 / 1 / 3 / 2;
     }
 }
+
+@container cafe-container (360px <= width <= 639px) {
+    .cafe-box {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr repeat(2, 1fr);
+        grid-row-gap: 10px;
+        padding: 10px 30px 10px 30px;
+    }
+
+    .heading-secondary__cafe {
+        font-size: 32px;
+        grid-area: 1 / 1 / 2 / 2;
+        text-align: center;
+        margin-left: 0px;
+    }
+
+    .cafe-img {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    .cafe-text {
+        font-size: 13px;
+        text-align: center; 
+        grid-area: 3 / 1 / 4 / 2;
+    }
+}

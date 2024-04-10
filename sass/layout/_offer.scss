@@ -76,3 +76,24 @@
      column-gap: 20px;
     }
 }
+
+@container conteiner-offer (360px <= width <= 639px) {
+    .offer-container {
+        display: grid;
+        gap: 30px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 0.5fr);
+        padding: 40px 30px 30px 30px;
+    }
+    .heading-secondary {
+        font-size: 26px;
+    }
+    .offer-text {
+        font-size: 13px;
+        column-count: 1;
+      //  text-align: center;
+       }
+       .offer-container__text {
+        margin: 0px;
+    }
+}

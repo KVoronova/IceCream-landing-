@@ -103,3 +103,44 @@ align-self: center;
         margin-right: 40px;
     }
 }
+
+@container footer-container (360px <= width <= 639px)  {
+    .footer-container {
+        padding: 10px 30px 30px 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        //background-color: $color-main;
+    }
+
+    .logo-footer {
+        display: none;
+        }
+
+       .footer-menu {
+            display: flex;
+            align-items: center;  
+        
+            &__ul{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+            }
+        }
+        
+        .footer-icon {
+            padding-top: 20px;
+        }
+
+         .icon-social {
+            margin-left: 10px;
+            align-self: center;
+        }
+
+        .copyright {
+        font-size: 10px;
+        padding-top: 10%;
+        }
+}
