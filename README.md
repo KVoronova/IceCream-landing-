@@ -1,1 +1,2 @@
-Practice CSS container queries 
+Landing page
+Practice CSS container queries. 
