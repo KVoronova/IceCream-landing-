@@ -117,7 +117,7 @@ body {
 }
 
 .block-image_first {
-  background-image: url(/IceCream-landing-/img/slice-one.svg);
+  background-image: url(../img/slice-one.svg);
   background-size: cover;
   height: 550px;
   width: 100%;
